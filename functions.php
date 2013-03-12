@@ -53,9 +53,9 @@ add_action( 'wp_enqueue_scripts', 'tandem_scripts_styles' );
  */
 function tandem_widgets_init() {
 	register_sidebar( array(
-		'name' => __( 'Sidebar (forum)', 'bike' ),
+		'name' => __( 'Sidebar (forum)', 'tandem' ),
 		'id' => 'sidebar-forum-left',
-		'description' => __( 'Benyttes til at inds&aelig;tte indhold i venstre side under undermenu p&aring; side under forum.', 'bike' ),
+		'description' => __( 'Benyttes til at inds&aelig;tte indhold i venstre side under undermenu p&aring; side under forum.', 'tandem' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'before_title' => '<h1>',
 		'after_title' => '</h1>',

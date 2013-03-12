@@ -4,11 +4,12 @@
  */
 ?>
 
-<?php $bike_post_type = get_post_type(); ?>
+<?php $content_width = 420;
+$tandem_post_type = get_post_type(); ?>
 
-<?php get_header( $bike_post_type ); ?>
+<?php get_header( $tandem_post_type ); ?>
 
-<?php get_sidebar( $bike_post_type ); ?>
+<?php get_sidebar( $tandem_post_type ); ?>
 
 	<section id="content" class="clearfix">
 		<?php get_search_form(); ?>
@@ -34,8 +35,6 @@
 						<?php bbp_get_template_part( 'form', 'protected' ); ?>
 					<?php else : ?>
 						<?php if ( bbp_show_lead_topic() ) : ?>
-
-
 
 							<?php do_action( 'bbp_template_before_lead_topic' ); ?>
 							<ul id="topic-<?php bbp_topic_id(); ?>-lead" class="bbp-lead-topic">
@@ -81,8 +80,6 @@
 							</ul>
 							<?php do_action( 'bbp_template_after_lead_topic' ); ?>
 
-
-
 						<?php endif; ?>
 						<?php if ( bbp_has_replies() ) : ?>
 							<?php bbp_get_template_part( 'loop', 'replies' ); ?>
@@ -108,4 +105,4 @@
 		<?php do_action( 'bbp_after_main_content' ); ?>
 	</section>
 
-<?php get_footer( $bike_post_type ); ?>
+<?php get_footer( $tandem_post_type ); ?>

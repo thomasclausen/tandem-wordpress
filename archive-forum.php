@@ -4,11 +4,11 @@
  */
 ?>
 
-<?php $bike_post_type = get_post_type(); ?>
+<?php $tandem_post_type = get_post_type(); ?>
 
-<?php get_header( $bike_post_type ); ?>
+<?php get_header( $tandem_post_type ); ?>
 
-<?php get_sidebar( $bike_post_type ); ?>
+<?php get_sidebar( $tandem_post_type ); ?>
 
 	<section id="content" class="clearfix">
 		<?php get_search_form(); ?>
@@ -33,4 +33,4 @@
 		<?php do_action( 'bbp_after_main_content' ); ?>
 	</section>
 
-<?php get_footer( $bike_post_type ); ?>
+<?php get_footer( $tandem_post_type ); ?>
