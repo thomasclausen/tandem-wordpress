@@ -65,7 +65,7 @@
 #bbpress-forums ul.bbp-replies div.bbp-reply-author { width: 140px; font-size: 12px; line-height: 16px; margin-right: 20px; margin-bottom: 20px; float: left; }
 #bbpress-forums ul.bbp-replies div.bbp-reply-author img.avatar { max-width: 80px; margin-bottom: 10px; }
 #bbpress-forums ul.bbp-replies div.bbp-reply-author .bbp-author-role,
-#bbpress-forums ul.bbp-replies div.bbp-reply-author .bbp-reply-post-date { font-size: 10px; font-style: italic; }
+#bbpress-forums ul.bbp-replies div.bbp-reply-author .bbp-reply-post-date { font-size: 10px; font-style: italic; display: inline-block; clear: left; }
 
 #bbpress-forums ul.bbp-replies div.bbp-reply-content { width: 420px; float: left; }
 #bbpress-forums ul.bbp-replies div.bbp-reply-content p { margin-bottom: 20px; }
