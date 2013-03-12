@@ -4,7 +4,7 @@
  *
  * @package TANDEM
  * @since TANDEM 1.0
- * @last_updated TANDEM 1.4
+ * @last_updated TANDEM 1.5
  */
 
 if ( ! function_exists( 'tandem_setup' ) ) :
@@ -36,10 +36,10 @@ add_action( 'after_setup_theme', 'tandem_setup' );
 function tandem_scripts_styles() {
 	global $wp_styles, $wp_scripts;
 
-	wp_register_style( 'tandem-theme', get_stylesheet_directory_uri() . '/style.css', array( 'reset-html5', 'bike-theme' ), '1.4' );
+	wp_register_style( 'tandem-theme', get_stylesheet_directory_uri() . '/style.css', array( 'reset-html5', 'bike-theme' ), '1.5' );
 	wp_enqueue_style( 'tandem-theme' );
 	if ( ! is_404() ) :
-		wp_register_script( 'tandem-theme-script', get_stylesheet_directory_uri() . '/script.js', array( 'jquery', 'bike-theme-script' ), '1.4', true );
+		wp_register_script( 'tandem-theme-script', get_stylesheet_directory_uri() . '/script.js', array( 'jquery', 'bike-theme-script' ), '1.5', true );
 		wp_enqueue_script( 'tandem-theme-script' );
 	endif;
 }
@@ -79,22 +79,13 @@ function tandem_bbp_breadcrumb( $args = array() ) {
 add_filter( 'bbp_after_get_breadcrumb_parse_args', 'tandem_bbp_breadcrumb' );
 
 /**
- * Change URL to redirect to after user registration
+ * Change URL to redirect to after user registration and reset password
  *
  * @since TANDEM 1.3
- * @last_updated TANDEM 1.4
+ * @last_updated TANDEM 1.5
  */
-function tandem_registration_redirect() {
-	return wp_get_referer();
-}
-add_filter( 'bbp_user_register_redirect_to', 'tandem_registration_redirect' );
-
-/**
- * Change URL to redirect to after user reset password
- *
- * @since TANDEM 1.4
- */
-function tandem_lost_pass_redirect() {
+function tandem_redirect_to() {
 	return home_url( '/forums/' );
 }
-add_filter( 'bbp_user_lost_pass_redirect_to', 'tandem_lost_pass_redirect' );
+add_filter( 'bbp_user_register_redirect_to', 'tandem_redirect_to' );
+add_filter( 'bbp_user_lost_pass_redirect_to', 'tandem_redirect_to' );
