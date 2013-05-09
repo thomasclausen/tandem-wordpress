@@ -5,7 +5,7 @@ Description: Extends The Bike Theme to support and style bbPress.
 Author: Thomas Clausen
 Author URI: http://www.thomasclausen.dk/
 Template: bike
-Version: 1.6
+Version: 1.7
 Tags: red
 
 Like WordPress, this work (The CSS, XHTML and design) is released under GNU General Public License, version 2 (GPL).
@@ -14,39 +14,109 @@ License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
-.single.bbPress section#sidebar a { color: #464646; }
+.single.bbPress section#sidebar a {
+	color: #464646;
+}
 
-section#sidebar.forum aside { margin-bottom: 40px; }
+section#sidebar.forum aside {
+	margin-bottom: 40px;
+}
 
-section#sidebar.forum .bbp_widget_login { padding-top: 20px; padding-bottom: 20px; border-top: 3px solid #686868; border-bottom: 1px solid rgba(104, 104, 104, 0.6); }
-section#sidebar.forum .bbp_widget_login h1 { font-size: 16px; text-transform: uppercase; }
+section#sidebar.forum .bbp_widget_login {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-top: 3px solid #686868;
+	border-bottom: 1px solid rgba(104, 104, 104, 0.6);
+}
+section#sidebar.forum .bbp_widget_login h1 {
+	font-size: 16px;
+	text-transform: uppercase;
+}
 
-section#sidebar nav#bbp-user-navigation { border-top: 3px solid #686868; margin-bottom: 40px; }
-section#sidebar nav#bbp-user-navigation ul {}
-section#sidebar nav#bbp-user-navigation ul li { font-size: 16px; line-height: 40px; color: #333; border-bottom: 1px solid rgba(104, 104, 104, 0.2); }
+section#sidebar nav#bbp-user-navigation {
+	border-top: 3px solid #686868;
+	margin-bottom: 40px;
+}
+section#sidebar nav#bbp-user-navigation ul li {
+	font-size: 16px;
+	line-height: 40px;
+	color: #333;
+	border-bottom: 1px solid rgba(104, 104, 104, 0.2);
+}
 section#sidebar nav#bbp-user-navigation ul li:hover,
 section#sidebar nav#bbp-user-navigation ul li:focus,
-section#sidebar nav#bbp-user-navigation ul li.current { background: url(images/submenu-li-current-bg.png) no-repeat 100% 50%; }
-section#sidebar nav#bbp-user-navigation ul li a { color: #333; text-decoration: none; display: block; }
+section#sidebar nav#bbp-user-navigation ul li.current {
+	background: url(images/submenu-li-current-bg.png) no-repeat 100% 50%;
+}
+section#sidebar nav#bbp-user-navigation ul li a {
+	color: #333;
+	text-decoration: none;
+	display: block;
+}
 
-section#sidebar.forum .bbp-login-tabs { padding-top: 20px; padding-bottom: 20px; border-top: 3px solid #686868; border-bottom: 1px solid rgba(104, 104, 104, 0.6); }
+section#sidebar.forum .bbp-login-tabs {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-top: 3px solid #686868;
+	border-bottom: 1px solid rgba(104, 104, 104, 0.6);
+}
 
-section#sidebar.forum nav.bbp-login-navigation { margin-bottom: -1px; }
-section#sidebar.forum nav.bbp-login-navigation ul li { line-height: 30px; padding-right: 10px; padding-left: 10px; background: #fafafa; border: 1px solid rgba(104, 104, 104, 0.2); margin-left: 4px; float: left; cursor: pointer; }
+section#sidebar.forum nav.bbp-login-navigation {
+	margin-bottom: -1px;
+}
+section#sidebar.forum nav.bbp-login-navigation ul li {
+	line-height: 30px;
+	padding-right: 10px;
+	padding-left: 10px;
+	background: #fafafa;
+	border: 1px solid rgba(104, 104, 104, 0.2);
+	margin-left: 4px;
+	float: left;
+	cursor: pointer;
+}
 section#sidebar.forum nav.bbp-login-navigation ul li:hover,
 section#sidebar.forum nav.bbp-login-navigation ul li:focus,
-section#sidebar.forum nav.bbp-login-navigation ul li.current { background: #fff; border-bottom-color: #fff; }
-section#sidebar.forum nav.bbp-login-navigation ul li a { text-decoration: none; }
+section#sidebar.forum nav.bbp-login-navigation ul li.current {
+	background: #fff;
+	border-bottom-color: #fff;
+}
+section#sidebar.forum nav.bbp-login-navigation ul li a {
+	text-decoration: none;
+}
 
-section#sidebar.forum .bbp-login-tab { padding: 10px 20px 20px 20px; background: #fff; border: 1px solid rgba(104, 104, 104, 0.2); display: none; }
-section#sidebar.forum .bbp-login-tab.current { display: block; }
-section#sidebar.forum .bbp-login-tab h1 { font-size: 16px; text-transform: uppercase; }
-section#sidebar.forum .bbp-login-tab p { font-size: 12px; line-height: 16px; font-style: italic; margin-top: 10px; }
+section#sidebar.forum .bbp-login-tab {
+	padding: 10px 20px 20px 20px;
+	background: #fff;
+	border: 1px solid rgba(104, 104, 104, 0.2);
+	display: none;
+}
+section#sidebar.forum .bbp-login-tab.current {
+	display: block;
+}
+section#sidebar.forum .bbp-login-tab h1 {
+	font-size: 16px;
+	text-transform: uppercase;
+}
+section#sidebar.forum .bbp-login-tab p {
+	font-size: 12px;
+	line-height: 16px;
+	font-style: italic;
+	margin-top: 10px;
+}
 section#sidebar.forum .bbp-login-tab .bbp-logged-in,
-section#sidebar.forum .bbp-login-tab .bbp-registered { margin-top: 10px; }
+section#sidebar.forum .bbp-login-tab .bbp-registered {
+	margin-top: 10px;
+}
 
 /* FORUM */
 article.forum,
-article.topic { border-top: none; }
+article.topic {
+	border-top: none;
+}
 
-.wp-editor-wrap * { -moz-box-sizing: content-box; -webkit-box-sizing: content-box; -ms-box-sizing: content-box; box-sizing: content-box; }
+.wp-editor-wrap * {
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	-ms-box-sizing: content-box;
+	box-sizing: content-box;
+}

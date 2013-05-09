@@ -4,7 +4,7 @@
  *
  * @package TANDEM
  * @since TANDEM 1.0
- * @last_updated TANDEM 1.6
+ * @last_updated TANDEM 1.7
  */
 
 if ( ! function_exists( 'tandem_setup' ) ) :
@@ -36,10 +36,10 @@ add_action( 'after_setup_theme', 'tandem_setup' );
 function tandem_scripts_styles() {
 	global $wp_styles, $wp_scripts;
 
-	wp_register_style( 'tandem-theme', get_stylesheet_directory_uri() . '/style.css', array( 'reset-html5', 'bike-theme' ), '1.6' );
+	wp_register_style( 'tandem-theme', get_stylesheet_directory_uri() . '/style.css', array( 'reset-html5', 'bike-theme' ), '1.7' );
 	wp_enqueue_style( 'tandem-theme' );
 	if ( ! is_404() ) :
-		wp_register_script( 'tandem-theme-script', get_stylesheet_directory_uri() . '/script.js', array( 'jquery', 'masonry-script', 'bike-theme-script' ), '1.6', true );
+		wp_register_script( 'tandem-theme-script', get_stylesheet_directory_uri() . '/script.js', array( 'jquery', 'masonry-script', 'bike-theme-script' ), '1.7', true );
 		wp_enqueue_script( 'tandem-theme-script' );
 	endif;
 }
